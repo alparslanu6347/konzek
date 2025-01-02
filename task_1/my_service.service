@@ -1,0 +1,15 @@
+[Unit]
+Description=Python HTTP Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ec2-user/konzek/my_server.py
+Restart=always
+User=ec2-user
+WorkingDirectory=/home/ec2-user/konzek
+StandardOutput=append:/var/log/my_service.log
+StandardError=append:/var/log/my_service_error.log
+TimeoutSec=30
+
+[Install]
+WantedBy=multi-user.target

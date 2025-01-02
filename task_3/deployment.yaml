@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    name: konzek
+    app: my-app
+spec:
+  replicas: 2  # 2 pods
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app-container
+        image: <your-dockerhub-username>/my-app:1.0  # Use your Docker Hub image
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "1"
+          requests:
+            memory: "128Mi"
+            cpu: "500m"

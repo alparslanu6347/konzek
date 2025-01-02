@@ -1,0 +1,33 @@
+Duration:
+
+Task 1: Deploy a Systemd Service
+
+Objective: Demonstrate the ability to deploy and manage a service on a Linux system. Steps: 1. Create a simple application (e.g., a Python or Node.js HTTP server). 2. Write a systemd unit file to manage the application as a service. 3. Ensure the service starts automatically on boot and logs output to a file.
+
+Deliverables: • The application code. • The systemd unit file. • Instructions for deploying and verifying the service.
+
+Task 2: Docker-Based Application Deployment
+
+Objective: Showcase containerization and deployment skills. Steps: 1. Containerize the application from Task 1 using Docker. 2. Create a docker-compose.yml file to manage the application and a reverse proxy (e.g., NGINX or Traefik) for load balancing. 3. Ensure high availability by configuring at least 2 replicas.
+
+Deliverables: • Dockerfile and docker-compose.yml. • Deployment instructions.
+
+Task 3: Kubernetes Cluster Setup
+
+Objective: Validate experience with Kubernetes and high-availability configurations. Steps: 1. Deploy the application on a Kubernetes cluster. 2. Use a tool like kubectl, Helm, or Kustomize for deployment. 3. Ensure the application is reachable via a LoadBalancer or Ingress. 4. Demonstrate rolling updates for the application.
+
+Deliverables: • Kubernetes manifests (Deployment, Service, and Ingress/LoadBalancer). • A short guide on deploying and testing the application.
+
+Task 4: Debugging and Troubleshooting
+
+Objective: Assess problem-solving skills. Scenario: You are provided with a misconfigured systemd service or Kubernetes Deployment. Steps: 1. Identify and fix the issues. 2. Document your troubleshooting process.
+
+Deliverables: • Fixed configuration files. • A brief troubleshooting log explaining your approach.
+
+Task 5: Talos-Focused Configuration (Optional, if Talos is critical)
+
+Objective: Demonstrate familiarity with Talos. Steps: 1. Explain how you would manage and troubleshoot a Talos-based cluster. 2. If possible, provide a configuration example for deploying a sample workload.ßßß
+
+Deliverables: • A written explanation and configuration example.
+
+Evaluation Criteria 1. Technical Knowledge: Proper use of tools like systemd, Docker, Kubernetes, and Talos. 2. Best Practices: Clear, secure, and reusable configurations. 3. Troubleshooting: Logical and systematic approach to identifying and fixing issues. 4. Documentation: Clarity and detail in guides and explanations.

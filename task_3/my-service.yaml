@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+  labels:
+    name: konzek
+    app: my-app
+spec:
+  selector:
+    app: my-app
+  type: LoadBalancer  # We are using LoadBalancer and AWS support for external access. Check on the Console; a Load Balancer will be created.
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80  # Service port
+      targetPort: 8080  # Pod port
