@@ -1,5 +1,9 @@
 # Installing Kubernetes on `Ubuntu` running on AWS EC2 Instances
 
+***Instead of following the steps in Part 1, Part 2, and Part 3, a Kubernetes cluster can be set up using the Terraform tool. For this, the module I have published in my Terraform Registry account can be used.***
+
+[https://registry.terraform.io/modules/alparslanu6347/ks8-cluster/aws/latest]
+
 ## Part 1 - Setting Up Kubernetes Environment on `All Nodes`
 
 - We will prepare two nodes for Kubernetes on `Ubuntu 24.04`. One of the node will be configured as the `Master node`, the other will be the `worker node`. Following steps should be executed on all nodes. *Note: It is recommended to install Kubernetes on machines with `2 CPU Core` and `2GB RAM` at minimum to get it working efficiently. For this reason, we will select `t3a.medium` as EC2 instance type, which has `2 CPU Core` and `4 GB RAM`.*
